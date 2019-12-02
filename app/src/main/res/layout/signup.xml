@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fef01b"
+    tools:context=".SignUp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="93dp"
+        android:layout_marginBottom="497dp"
+        android:gravity="center_horizontal"
+        android:text="회원가입"
+        android:textColor="#423630"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/register_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="356dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="228dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TableLayout
+            android:layout_width="354dp"
+            android:layout_height="290dp">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_weight="0.35">
+
+                <!-- <TextView-->
+                <!-- android:layout_width="match_parent"-->
+                <!-- android:layout_height="match_parent"-->
+                <!-- android:layout_weight="1"-->
+                <!-- android:gravity="center_vertical"-->
+                <!-- android:text=" 아이디"-->
+                <!-- android:textAlignment="center"-->
+                <!-- android:textAppearance="@style/TextAppearance.AppCompat.eadline"-->
+                <!-- android:textSize="18dp" />-->
+
+                <EditText
+                    android:id="@+id/register_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="@drawable/btn2"
+                    android:hint=" ID를 입력해주세요." />
+
+                <Button
+                    android:id="@+id/overlapID_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/btn3"
+                    android:text="중복확인"
+                    android:textColor="#fff" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <!-- <TextView-->
+                <!-- android:layout_width="match_parent"-->
+                <!-- android:layout_height="match_parent"-->
+                <!-- android:layout_weight="1"-->
+                <!-- android:gravity="center_vertical"-->
+                <!-- android:text="비밀번호"-->
+                <!-- android:textAlignment="center"-->
+                <!-- android:textAppearance="@style/TextAppearance.AppCompat.Headline"-->
+                <!-- android:textSize="18dp" />-->
+
+                <EditText
+                    android:id="@+id/register_pw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn2"
+                    android:hint=" 비밀번호를 입력해주세요."
+                    android:inputType="textPassword" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <!-- <TextView-->
+                <!-- android:layout_width="match_parent"-->
+                <!-- android:layout_height="match_parent"-->
+                <!-- android:layout_weight="1"-->
+                <!-- android:gravity="center_vertical"-->
+                <!-- android:text="비밀번호"-->
+                <!-- android:textAlignment="center"-->
+                <!-- android:textAppearance="@style/TextAppearance.AppCompat.Headline"-->
+                <!-- android:textSize="18dp" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/check_pw"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="8"-->
+<!--                    android:background="@drawable/btn2"-->
+<!--                    android:hint=" 비밀번호를 한번 더 입력해주세요."-->
+<!--                    android:inputType="textPassword" />-->
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:id="@+id/check_pw"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn2"
+                        android:hint=" 비밀번호를 한번 더 입력해주세요."
+                        android:inputType="textPassword" />
+
+                    <ImageView
+                        android:id="@+id/check"
+                        android:paddingRight="10dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        />
+
+                </FrameLayout>
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <!-- <TextView-->
+                <!-- android:layout_width="match_parent"-->
+                <!-- android:layout_height="match_parent"-->
+                <!-- android:layout_weight="1"-->
+                <!-- android:gravity="center_vertical"-->
+                <!-- android:text=" 이름"-->
+                <!-- android:textAlignment="center"-->
+                <!-- android:textAppearance="@style/TextAppearance.AppCompat.Headline"-->
+                <!-- android:textSize="18dp" />-->
+
+                <EditText
+                    android:id="@+id/register_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="@drawable/btn2"
+                    android:hint=" 이름을 입력해주세요." />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.35">
+
+                <!-- <TextView-->
+                <!-- android:layout_width="match_parent"-->
+                <!-- android:layout_height="match_parent"-->
+                <!-- android:layout_weight="1"-->
+                <!-- android:gravity="center_vertical"-->
+                <!-- android:text=" 이메일"-->
+                <!-- android:textAlignment="center"-->
+                <!-- android:textAppearance="@style/TextAppearance.AppCompat.Headline"-->
+                <!-- android:textSize="18dp" />-->
+
+                <EditText
+                    android:id="@+id/register_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="@drawable/btn2"
+                    android:hint=" 이메일을 입력해주세요." />
+
+                <Button
+                    android:id="@+id/overlapEMail_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/btn3"
+                    android:text="중복확인"
+                    android:textColor="#fff" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="358dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="63dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn3"
+        android:gravity="center"
+        android:text="가입"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.602" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
